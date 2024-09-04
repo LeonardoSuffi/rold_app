@@ -1,19 +1,78 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:orientation="vertical"
+    android:padding="16dp">
 
-    <TextView
+    <EditText
+        android:id="@+id/editTextNome"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="@string/nome"
+        android:importantForAutofill="yes" />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="@string/email"
+        android:importantForAutofill="yes" />
+
+    <EditText
+        android:id="@+id/editTextTelefone"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="@string/telefone"
+        android:importantForAutofill="yes" />
+
+    <EditText
+        android:id="@+id/editTextRA"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="@string/ra"
+        android:inputType="number"
+        android:importantForAutofill="yes" />
+
+    <EditText
+        android:id="@+id/editTextCPF"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="@string/cpf"
+        android:inputType="number"
+        android:importantForAutofill="yes" />
+
+    <EditText
+        android:id="@+id/editTextCurso"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="@string/curso"
+        android:importantForAutofill="yes" />
+
+    <EditText
+        android:id="@+id/editTextAno"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="@string/ano"
+        android:inputType="number"
+        android:importantForAutofill="yes" />
+
+    <EditText
+        android:id="@+id/editTextTurno"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="@string/turno"
+        android:importantForAutofill="yes" />
+
+    <Button
+        android:id="@+id/buttonSalvar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="@string/salvar" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <Button
+        android:id="@+id/buttonVerContatos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ver_contatos" />
+</LinearLayout>
